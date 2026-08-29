@@ -1,0 +1,594 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maison Élise | Joias</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="#" class="logo">
+            <span>MAISON</span>
+            <strong>ÉLISE</strong>
+        </a>
+
+        <nav class="menu" id="menu">
+
+            <a href="#inicio">Início</a>
+            <a href="#colecao">Coleção</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" onclick="abrirBusca()">
+                🔍
+            </button>
+
+            <button class="icon-btn" onclick="abrirFavoritos()">
+                ♡
+                <span id="favoritosCount">0</span>
+            </button>
+
+            <button class="icon-btn" onclick="abrirCarrinho()">
+                🛍
+                <span id="carrinhoCount">0</span>
+            </button>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="hero-subtitle">
+                    COLEÇÃO 2026
+                </span>
+
+                <h1>
+                    O brilho que<br>
+                    <em>conta sua história.</em>
+                </h1>
+
+                <p>
+                    Descubra joias criadas para transformar
+                    momentos especiais em memórias eternas.
+                </p>
+
+                <a href="#colecao" class="btn">
+                    Explorar coleção
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categorias">
+
+            <div class="section-title">
+
+                <span>EXPLORE</span>
+
+                <h2>
+                    Encontre sua joia
+                </h2>
+
+            </div>
+
+            <div class="categoria-grid">
+
+                <button onclick="filtrarCategoria('todos')">
+                    <span>✦</span>
+                    Todas
+                </button>
+
+                <button onclick="filtrarCategoria('aneis')">
+                    💍
+                    Anéis
+                </button>
+
+                <button onclick="filtrarCategoria('colares')">
+                    ◇
+                    Colares
+                </button>
+
+                <button onclick="filtrarCategoria('brincos')">
+                    ✧
+                    Brincos
+                </button>
+
+                <button onclick="filtrarCategoria('pulseiras')">
+                    ⛓
+                    Pulseiras
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATÁLOGO -->
+        <section class="catalogo" id="colecao">
+
+            <div class="catalogo-header">
+
+                <div>
+
+                    <span>CURADORIA</span>
+
+                    <h2>
+                        Nossa coleção
+                    </h2>
+
+                </div>
+
+                <div class="filtros">
+
+                    <select id="ordenacao" onchange="ordenarProdutos()">
+
+                        <option value="padrao">
+                            Mais recentes
+                        </option>
+
+                        <option value="menor">
+                            Menor preço
+                        </option>
+
+                        <option value="maior">
+                            Maior preço
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="produtos" id="produtos">
+
+                <!-- PRODUTO 1 -->
+                <article class="produto"
+                    data-categoria="aneis"
+                    data-preco="890">
+
+                    <div class="produto-img">
+
+                        <img src="img/anel-1.jpg" alt="Anel Aurora">
+
+                        <span class="badge">
+                            Novo
+                        </span>
+
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Anel Aurora')">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="produto-info">
+
+                        <span class="categoria">
+                            Anéis
+                        </span>
+
+                        <h3>
+                            Anel Aurora
+                        </h3>
+
+                        <p>
+                            Ouro 18k
+                        </p>
+
+                        <strong>
+                            R$ 890,00
+                        </strong>
+
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Anel Aurora',
+                                'Ouro 18k',
+                                '890',
+                                'img/anel-1.jpg'
+                            )">
+
+                            Ver detalhes
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUTO 2 -->
+                <article class="produto"
+                    data-categoria="colares"
+                    data-preco="1290">
+
+                    <div class="produto-img">
+
+                        <img src="img/colar-1.jpg" alt="Colar Lumière">
+
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Colar Lumière')">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="produto-info">
+
+                        <span class="categoria">
+                            Colares
+                        </span>
+
+                        <h3>
+                            Colar Lumière
+                        </h3>
+
+                        <p>
+                            Ouro 18k
+                        </p>
+
+                        <strong>
+                            R$ 1.290,00
+                        </strong>
+
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Colar Lumière',
+                                'Ouro 18k',
+                                '1290',
+                                'img/colar-1.jpg'
+                            )">
+
+                            Ver detalhes
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUTO 3 -->
+                <article class="produto"
+                    data-categoria="brincos"
+                    data-preco="690">
+
+                    <div class="produto-img">
+
+                        <img src="img/brinco-1.jpg" alt="Brinco Étoile">
+
+                        <span class="badge">
+                            Destaque
+                        </span>
+
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Brinco Étoile')">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="produto-info">
+
+                        <span class="categoria">
+                            Brincos
+                        </span>
+
+                        <h3>
+                            Brinco Étoile
+                        </h3>
+
+                        <p>
+                            Ouro 18k e zircônia
+                        </p>
+
+                        <strong>
+                            R$ 690,00
+                        </strong>
+
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Brinco Étoile',
+                                'Ouro 18k e zircônia',
+                                '690',
+                                'img/brinco-1.jpg'
+                            )">
+
+                            Ver detalhes
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUTO 4 -->
+                <article class="produto"
+                    data-categoria="pulseiras"
+                    data-preco="980">
+
+                    <div class="produto-img">
+
+                        <img src="img/pulseira-1.jpg" alt="Pulseira Élégance">
+
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Pulseira Élégance')">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="produto-info">
+
+                        <span class="categoria">
+                            Pulseiras
+                        </span>
+
+                        <h3>
+                            Pulseira Élégance
+                        </h3>
+
+                        <p>
+                            Ouro 18k
+                        </p>
+
+                        <strong>
+                            R$ 980,00
+                        </strong>
+
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Pulseira Élégance',
+                                'Ouro 18k',
+                                '980',
+                                'img/pulseira-1.jpg'
+                            )">
+
+                            Ver detalhes
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="sobre" id="sobre">
+
+            <div class="sobre-img"></div>
+
+            <div class="sobre-content">
+
+                <span>NOSSA ESSÊNCIA</span>
+
+                <h2>
+                    Joias que atravessam gerações.
+                </h2>
+
+                <p>
+                    Cada peça Maison Élise nasce da combinação
+                    entre design atemporal, materiais selecionados
+                    e atenção aos mínimos detalhes.
+                </p>
+
+                <p>
+                    Criamos joias para acompanhar histórias,
+                    celebrar conquistas e eternizar momentos.
+                </p>
+
+                <a href="#contato" class="btn-outline">
+                    Conheça nossa história
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+
+            <span>
+                EXCLUSIVIDADE
+            </span>
+
+            <h2>
+                Receba novidades da Maison
+            </h2>
+
+            <p>
+                Cadastre seu e-mail e fique por dentro
+                de lançamentos e coleções exclusivas.
+            </p>
+
+            <form onsubmit="inscrever(event)">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Seu melhor e-mail"
+                    required>
+
+                <button type="submit">
+                    Inscrever
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contato">
+
+        <div class="footer-logo">
+            <span>MAISON</span>
+            <strong>ÉLISE</strong>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#inicio">Início</a>
+            <a href="#colecao">Coleção</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#">Instagram</a>
+
+        </div>
+
+        <p>
+            © 2026 Maison Élise. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- MODAL PRODUTO -->
+    <div class="modal" id="produtoModal">
+
+        <div class="modal-content">
+
+            <button class="fechar" onclick="fecharModal()">
+                ×
+            </button>
+
+            <img id="modalImg" src="" alt="">
+
+            <div class="modal-info">
+
+                <span id="modalCategoria">
+                    JOIA
+                </span>
+
+                <h2 id="modalNome">
+                    Nome
+                </h2>
+
+                <p id="modalMaterial">
+                    Material
+                </p>
+
+                <strong id="modalPreco">
+                    R$ 0,00
+                </strong>
+
+                <button
+                    class="btn"
+                    onclick="adicionarCarrinho()">
+
+                    Adicionar ao carrinho
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARRINHO -->
+    <aside class="carrinho" id="carrinho">
+
+        <div class="carrinho-header">
+
+            <h2>
+                Seu carrinho
+            </h2>
+
+            <button onclick="fecharCarrinho()">
+                ×
+            </button>
+
+        </div>
+
+        <div id="carrinhoItens">
+
+            <p class="carrinho-vazio">
+                Seu carrinho está vazio.
+            </p>
+
+        </div>
+
+        <div class="carrinho-footer">
+
+            <div>
+                Total:
+                <strong id="total">
+                    R$ 0,00
+                </strong>
+            </div>
+
+            <button class="btn">
+                Finalizar pedido
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="overlay" id="overlay" onclick="fecharTudo()"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

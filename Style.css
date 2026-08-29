@@ -1,0 +1,1084 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #29251f;
+    background: #faf8f4;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(250, 248, 244, 0.92);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid #e8e1d7;
+
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    line-height: 1;
+}
+
+.logo span {
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+
+.logo strong {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 27px;
+
+    letter-spacing: 3px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 40px;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu a {
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 1px;
+
+    background: #29251f;
+
+    transition: .3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+.header-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.icon-btn {
+    position: relative;
+
+    border: none;
+    background: transparent;
+
+    font-size: 18px;
+
+    width: 35px;
+    height: 35px;
+}
+
+.icon-btn span {
+    position: absolute;
+
+    top: -2px;
+    right: -2px;
+
+    width: 15px;
+    height: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #29251f;
+    color: white;
+
+    font-size: 8px;
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 23px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 18, 15, .72),
+            rgba(20, 18, 15, .12)
+        ),
+        url("img/banner.jpg") center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 11px;
+
+    letter-spacing: 5px;
+}
+
+.hero h1 {
+    margin: 25px 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(55px, 7vw, 95px);
+
+    font-weight: 400;
+
+    line-height: .9;
+}
+
+.hero h1 em {
+    font-weight: 500;
+}
+
+.hero p {
+    max-width: 480px;
+
+    margin-bottom: 35px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 30px;
+
+    border: 1px solid #29251f;
+
+    background: #29251f;
+
+    color: white;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    background: transparent;
+
+    color: #29251f;
+}
+
+.hero .btn {
+    background: white;
+    color: #29251f;
+    border-color: white;
+}
+
+.hero .btn:hover {
+    background: transparent;
+    color: white;
+}
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title span,
+.catalogo-header span,
+.sobre-content > span,
+.newsletter > span {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+}
+
+.section-title h2,
+.catalogo-header h2,
+.sobre h2,
+.newsletter h2 {
+    margin-top: 12px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 50px;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categorias {
+    padding: 100px 7%;
+}
+
+.categoria-grid {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.categoria-grid button {
+    min-width: 130px;
+
+    padding: 20px;
+
+    border: 1px solid #ddd4c8;
+
+    background: transparent;
+
+    color: #29251f;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+.categoria-grid button:hover {
+    background: #29251f;
+
+    color: white;
+
+    border-color: #29251f;
+}
+
+
+/* =========================
+   CATÁLOGO
+========================= */
+
+.catalogo {
+    padding: 100px 7%;
+}
+
+.catalogo-header {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    margin-bottom: 45px;
+}
+
+.catalogo-header h2 {
+    margin-bottom: 0;
+}
+
+.filtros select {
+    padding: 12px 20px;
+
+    border: 1px solid #ddd4c8;
+
+    background: transparent;
+
+    outline: none;
+
+    font-size: 11px;
+}
+
+
+.produtos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.produto {
+    transition: .3s;
+}
+
+.produto-img {
+    position: relative;
+
+    overflow: hidden;
+
+    aspect-ratio: 4 / 5;
+
+    background: #eee8df;
+}
+
+.produto-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .6s;
+}
+
+.produto:hover img {
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    padding: 7px 12px;
+
+    background: white;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.favorito {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 18px;
+
+    transition: .3s;
+}
+
+.favorito.ativo {
+    background: #29251f;
+
+    color: white;
+}
+
+.produto-info {
+    padding: 18px 5px;
+}
+
+.produto-info .categoria {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #887d70;
+}
+
+.produto-info h3 {
+    margin: 7px 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    font-weight: 600;
+}
+
+.produto-info p {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+
+    color: #82796e;
+}
+
+.produto-info strong {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.produto-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    border: 1px solid #29251f;
+
+    background: transparent;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+.produto-btn:hover {
+    background: #29251f;
+
+    color: white;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 650px;
+
+    margin-top: 80px;
+
+    background: #eee8df;
+}
+
+.sobre-img {
+    background:
+        url("img/sobre.jpg")
+        center/cover;
+}
+
+.sobre-content {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 10%;
+}
+
+.sobre-content h2 {
+    max-width: 500px;
+
+    margin-bottom: 25px;
+
+    line-height: 1;
+}
+
+.sobre-content p {
+    max-width: 520px;
+
+    margin-bottom: 15px;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    color: #665e54;
+}
+
+.btn-outline {
+    align-self: flex-start;
+
+    margin-top: 20px;
+
+    padding: 15px 25px;
+
+    border: 1px solid #29251f;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+    padding: 120px 20px;
+
+    text-align: center;
+}
+
+.newsletter p {
+    margin: 20px auto 30px;
+
+    max-width: 500px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #756d63;
+}
+
+.newsletter form {
+    display: flex;
+
+    max-width: 500px;
+
+    margin: auto;
+}
+
+.newsletter input {
+    flex: 1;
+
+    padding: 16px;
+
+    border: 1px solid #d8d0c5;
+
+    background: transparent;
+
+    outline: none;
+}
+
+.newsletter button {
+    padding: 16px 25px;
+
+    border: 1px solid #29251f;
+
+    background: #29251f;
+
+    color: white;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 60px 7%;
+
+    background: #29251f;
+
+    color: white;
+
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.footer-logo span {
+    font-size: 9px;
+
+    letter-spacing: 4px;
+}
+
+.footer-logo strong {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    letter-spacing: 3px;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+footer p {
+    font-size: 9px;
+
+    color: #aaa39b;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, .65);
+
+    z-index: 2000;
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    width: min(900px, 100%);
+
+    background: #faf8f4;
+}
+
+.modal-content img {
+    width: 100%;
+
+    height: 550px;
+
+    object-fit: cover;
+}
+
+.modal-info {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.modal-info span {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+.modal-info h2 {
+    margin: 15px 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 50px;
+}
+
+.modal-info p {
+    margin-bottom: 20px;
+
+    color: #777;
+}
+
+.modal-info strong {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+}
+
+.fechar {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    background: white;
+
+    font-size: 20px;
+
+    z-index: 5;
+}
+
+
+/* =========================
+   CARRINHO
+========================= */
+
+.carrinho {
+    position: fixed;
+
+    top: 0;
+    right: -420px;
+
+    width: min(420px, 100%);
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #faf8f4;
+
+    z-index: 3000;
+
+    transition: .4s;
+}
+
+.carrinho.ativo {
+    right: 0;
+}
+
+.carrinho-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 30px;
+
+    border-bottom: 1px solid #ddd4c8;
+}
+
+.carrinho-header h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+}
+
+.carrinho-header button {
+    border: none;
+
+    background: transparent;
+
+    font-size: 25px;
+}
+
+#carrinhoItens {
+    flex: 1;
+
+    padding: 30px;
+
+    overflow-y: auto;
+}
+
+.carrinho-vazio {
+    color: #777;
+
+    font-size: 13px;
+}
+
+.carrinho-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd4c8;
+}
+
+.carrinho-item h4 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+}
+
+.carrinho-item p {
+    margin-top: 5px;
+
+    font-size: 11px;
+}
+
+.remover {
+    border: none;
+
+    background: transparent;
+
+    color: #999;
+}
+
+.carrinho-footer {
+    padding: 30px;
+
+    border-top: 1px solid #ddd4c8;
+}
+
+.carrinho-footer > div {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.carrinho-footer .btn {
+    width: 100%;
+}
+
+
+/* =========================
+   OVERLAY
+========================= */
+
+.overlay {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    background: rgba(0, 0, 0, .45);
+
+    z-index: 2500;
+}
+
+.overlay.ativo {
+    display: block;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .menu {
+        position: absolute;
+
+        top: 80px;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 30px;
+
+        background: #faf8f4;
+
+        border-bottom: 1px solid #ddd4c8;
+    }
+
+    .menu.ativo {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-img {
+        min-height: 450px;
+    }
+
+    .modal-content {
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-content img {
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding: 100px 25px 50px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .categorias,
+    .catalogo {
+        padding: 70px 20px;
+    }
+
+    .catalogo-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .categoria-grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .categoria-grid button {
+        min-width: auto;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+    .modal-info {
+        padding: 30px;
+    }
+
+    .modal-info h2 {
+        font-size: 40px;
+    }
+}

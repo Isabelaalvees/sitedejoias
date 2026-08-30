@@ -61,100 +61,69 @@
 
     <!-- HERO -->
     <main>
-
         <section class="hero" id="inicio">
-
             <div class="hero-content">
-
                 <span class="hero-subtitle">
                     COLEÇÃO 2026
                 </span>
-
                 <h1>
                     Detalhes que fazem<br>
                     <em>você brilhar.</em>
                 </h1>
-
                 <p>
                     USE. AME. VERUZ
                 </p>
-
                 <a href="#colecao" class="btn">
                     Explorar coleção
                 </a>
-
             </div>
-
         </section>
 
 
         <!-- CATEGORIAS -->
         <section class="categorias">
-
             <div class="section-title">
-
                 <span>EXPLORE</span>
-
                 <h2>
                     Encontre sua joia
                 </h2>
-
             </div>
 
             <div class="categoria-grid">
-
                 <button onclick="filtrarCategoria('todos')">
                     <span>✦</span>
                     Todas
                 </button>
-
                 
-
                 <button onclick="filtrarCategoria('colares')">
                     ✦
                     Colares
                 </button>
-
-
-
             </div>
-
         </section>
 
 
         <!-- CATÁLOGO -->
         <section class="catalogo" id="colecao">
-
             <div class="catalogo-header">
-
                 <div>
-
                     <h2>
                         Nossa coleção
                     </h2>
-
                 </div>
-
                 <div class="filtros">
-
                     <select id="ordenacao" onchange="ordenarProdutos()">
-
                         <option value="padrao">
                             Mais recentes
                         </option>
-
                         <option value="menor">
                             Menor preço
                         </option>
-
                         <option value="maior">
                             Maior preço
                         </option>
-
                     </select>
-
                 </div>
-
             </div>
 
 
@@ -164,53 +133,39 @@
                 <article class="produto"
                     data-categoria="colares"
                     data-preco="29,90">
-
                     <div class="produto-img">
 
-                        <img src="img/colar-aura.jpg" alt="Colar Aura">
-
+                        <img src="img/colar-aura.png" alt="Colar Aura">
                         <span class="badge">
                             Novo
                         </span>
-
                         <button
                             class="favorito"
                             onclick="favoritar(this, 'Colar Aura')">
-
                             ♡
-
                         </button>
-
                     </div>
 
                     <div class="produto-info">
-
                         <span class="categoria">
                             Colares
                         </span>
-
                         <h3>
                             Colar Aura
                         </h3>
-
                         <strong>
                             R$ 29,90
                         </strong>
-
                         <button
                             class="produto-btn"
                             onclick="verProduto(
                                 'Colar Aura',
                                 '29,90',
-                                'img/colar-aura.jpg'
+                                'img/colar-aura.png'
                             )">
-
                             Ver detalhes
-
                         </button>
-
                     </div>
-
                 </article>
 
 
@@ -218,45 +173,32 @@
                 <article class="produto"
                     data-categoria="colares"
                     data-preco="29,00">
-
                     <div class="produto-img">
-
-                        <img src="img/colar-coracao.jpg" alt="Colar Coração">
-
+                        <img src="img/colar-coracao.png" alt="Colar Coração">
                         <button
                             class="favorito"
                             onclick="favoritar(this, 'Colar Coração')">
-
                             ♡
-
                         </button>
-
                     </div>
-
                     <div class="produto-info">
-
                         <span class="categoria">
                             Colares
                         </span>
-
                         <h3>
                             Colar Coração
                         </h3>
-
                         <strong>
                             R$ 29,90
                         </strong>
-
                         <button
                             class="produto-btn"
                             onclick="verProduto(
                                 'Colar Coração',
                                 '29,90',
-                                'img/colar-coracao.jpg'
+                                'img/colar-coracao.png'
                             )">
-
                             Ver detalhes
-
                         </button>
                     </div>
                 </article>
@@ -267,7 +209,7 @@
                     data-categoria="colares"
                     data-preco="29,90">
                     <div class="produto-img">
-                        <img src="img/colar-encanto.jpg" alt="Colar Encanto">
+                        <img src="img/colar-encanto.png" alt="Colar Encanto">
                         <span class="badge">
                             Destaque
                         </span>
@@ -292,7 +234,7 @@
                             onclick="verProduto(
                                 'Colar Encanto',
                                 '29,90',
-                                'img/colar-encanto.jpg'
+                                'img/colar-encanto.png'
                             )">
                             Ver detalhes
                         </button>
@@ -306,13 +248,11 @@
                     data-preco="29,90">
 
                     <div class="produto-img">
-                        <img src="img/colar-lumina.jpg" alt="Colar Longo Lumina">
+                        <img src="img/colar-lumina.png" alt="Colar Longo Lumina">
                         <button
                             class="favorito"
                             onclick="favoritar(this, 'Colar Longo Lumina')">
-
                             ♡
-
                         </button>
                     </div>
 
@@ -331,7 +271,7 @@
                             onclick="verProduto(
                                 'Colar Longo Lumina',
                                 '29,90',
-                                'img/colar-lumina.jpg'
+                                'img/colar-lumina.png'
                             )">
                             Ver detalhes
                         </button>
@@ -343,7 +283,7 @@
                     data-categoria="colares"
                     data-preco="19,90">
                         <div class="produto-img">
-                            <img src="img/colar-elos.jpg" alt="Colar Elos">
+                            <img src="img/colar-elos.png" alt="Colar Elos">
                         <span class="badge">
                             Destaque
                         </span>
@@ -368,25 +308,25 @@
                             onclick="verProduto(
                                 'Colar Elos',
                                 '19,90',
-                                'img/colar-elos.jpg'
+                                'img/colar-elos.png'
                             )">
                             Ver detalhes
                         </button>
                     </div>
                 </article>
 
-            <!-- PRODUTO COLAR VANELEFF PRETO -->
+            <!-- PRODUTO COLAR VANcLEFF PRETO -->
                 <article class="produto"
                     data-categoria="colares"
                     data-preco="19,90">
                     <div class="produto-img">
-                        <img src="img/colar-vaneleff.jpg" alt="Colar Vaneleff Preto">
+                        <img src="img/colar-vancleff.png" alt="Colar Vancleff Preto">
                         <span class="badge">
                             Destaque
                         </span>
                         <button
                             class="favorito"
-                            onclick="favoritar(this, 'Colar Vaneleff Preto')">
+                            onclick="favoritar(this, 'Colar Vancleff Preto')">
                             ♡
                         </button>
                     </div>
@@ -395,7 +335,7 @@
                             Colares
                         </span>
                         <h3>
-                            Colar Vaneleff Preto
+                            Colar Vancleff Preto
                         </h3>
                         <strong>
                             R$ 19,90
@@ -403,27 +343,27 @@
                         <button
                             class="produto-btn"
                             onclick="verProduto(
-                                'Colar Vaneleff Preto',
+                                'Colar Vancleff Preto',
                                 '19,90',
-                                'img/colar-vaneleff.jpg'
+                                'img/colar-vancleff.png'
                             )">
                             Ver detalhes
                         </button>
                     </div>
                 </article>
 
-            <!-- PRODUTO COLAR VANELEFF BRANCO -->
+            <!-- PRODUTO COLAR VANCLEFF BRANCO -->
                 <article class="produto"
                     data-categoria="colares"
                     data-preco="19,90">
                     <div class="produto-img">
-                        <img src="img/colar-vaneleff-branco.jpg" alt="Colar Vaneleff Branco">
+                        <img src="img/colar-vancleff-branco.png" alt="Colar Vancleff Branco">
                         <span class="badge">
                             Destaque
                         </span>
                         <button
                             class="favorito"
-                            onclick="favoritar(this, 'Colar Vaneleff Branco')">
+                            onclick="favoritar(this, 'Colar Vancleff Branco')">
                             ♡
                         </button>
                     </div>
@@ -432,7 +372,7 @@
                             Colares
                         </span>
                         <h3>
-                            Colar Vaneleff Branco
+                            Colar Vancleff Branco
                         </h3>
                         <strong>
                             R$ 19,90
@@ -440,9 +380,9 @@
                         <button
                             class="produto-btn"
                             onclick="verProduto(
-                                'Colar Vaneleff Branco',
+                                'Colar Vancleff Branco',
                                 '19,90',
-                                'img/colar-vaneleff-branco.jpg'
+                                'img/colar-vancleff-branco.png'
                             )">
                             Ver detalhes
                         </button>
@@ -454,7 +394,7 @@
                     data-categoria="colares"
                     data-preco="19,90">
                     <div class="produto-img">
-                        <img src="img/colar-orla.jpg" alt="Colar Orla">
+                        <img src="img/colar-orla.png" alt="Colar Orla">
                         <span class="badge">
                             Destaque
                         </span>
@@ -479,25 +419,25 @@
                             onclick="verProduto(
                                 'Colar Orla',
                                 '19,90',
-                                'img/colar-orla.jpg'
+                                'img/colar-orla.png'
                             )">
                             Ver detalhes
                         </button>
                     </div>
                 </article>
 
-            <!-- PRODUTO COLAR FLOR DE OURO -->
+            <!-- PRODUTO COLAR FIO DE OURO -->
                 <article class="produto"
                     data-categoria="colares"
                     data-preco="29,90">
                     <div class="produto-img">
-                        <img src="img/colar-flor-de-ouro.jpg" alt="Colar Flor de Ouro">
+                        <img src="img/colar-fio-de-ouro.png" alt="Colar Fio de Ouro">
                         <span class="badge">
                             Destaque
                         </span>
                         <button
                             class="favorito"
-                            onclick="favoritar(this, 'Colar Flor de Ouro')">
+                            onclick="favoritar(this, 'Colar Fio de Ouro')">
                             ♡
                         </button>
                     </div>
@@ -506,7 +446,7 @@
                             Colares
                         </span>
                         <h3>
-                            Colar Flor de Ouro
+                            Colar Fio de Ouro
                         </h3>
                         <strong>
                             R$ 19,90
@@ -514,9 +454,9 @@
                         <button
                             class="produto-btn"
                             onclick="verProduto(
-                                'Colar Flor de Ouro',
+                                'Colar Fio de Ouro',
                                 '19,90',
-                                'img/colar-flor-de-ouro.jpg'
+                                'img/colar-fio-de-ouro.png'
                             )">
                             Ver detalhes
                         </button>
@@ -529,74 +469,55 @@
 
         <!-- SOBRE -->
         <section class="sobre" id="sobre">
-
             <div class="sobre-img"></div>
-
             <div class="sobre-content">
-
                 <span>NOSSA ESSÊNCIA</span>
-
                 <h2>
                      Detalhes que fazer você brilhar
                 </h2>
-
                 <p>
                     Cada peça da Veruz é criada com atenção aos detalhes, 
                     combinando design contemporâneo e qualidade excepcional. 
                     Nossas joias são mais do que acessórios; são expressões de estilo e personalidade.
                 </p>
-
                 <p>
                     Criamos joias para acompanhar histórias,
                     celebrar conquistas e eternizar momentos.
                 </p>
-
                 <a href="#contato" class="btn-outline">
                     Conheça nossa história
                 </a>
-
             </div>
-
         </section>
 
 
         <!-- NEWSLETTER -->
         <section class="newsletter">
-
             <span>
                 EXCLUSIVIDADE
             </span>
-
             <h2>
                 Receba novidades da Veruz Folheados
             </h2>
-
             <p>
                 Entre no nosso grupo e faça parte da comunidade Veruz Folheados. Receba ofertas exclusivas, lançamentos e conteúdos especiais diretamente no seu e-mail.
             </p>
-
             <form onsubmit="inscrever(event)">
-
                 <input
                     type="email"
                     id="email"
                     placeholder="Seu melhor e-mail"
                     required>
-
                 <button type="submit">
                     Inscrever
                 </button>
-
             </form>
-
         </section>
-
     </main>
 
 
     <!-- FOOTER -->
     <footer id="contato">
-
         <div class="footer-logo">
             <strong>VERUZ</strong>
             <span>FOLHEADOS</span>

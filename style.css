@@ -14,8 +14,8 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
-    color: #29251f;
-    background: #faf8f4;
+    color: #371F1A;
+    background: #FBF7F2;
 }
 
 button,
@@ -52,11 +52,11 @@ a {
     align-items: center;
     justify-content: space-between;
 
-    background: rgba(250, 248, 244, 0.92);
+    background: rgba(251, 247, 242, 0.92);
 
     backdrop-filter: blur(15px);
 
-    border-bottom: 1px solid #e8e1d7;
+    border-bottom: 1px solid #E6D8C9;
 
     z-index: 1000;
 }
@@ -109,7 +109,7 @@ a {
     width: 0;
     height: 1px;
 
-    background: #29251f;
+    background: #371F1A;
 
     transition: .3s;
 }
@@ -153,7 +153,7 @@ a {
 
     border-radius: 50%;
 
-    background: #29251f;
+    background: #371F1A;
     color: white;
 
     font-size: 8px;
@@ -184,8 +184,8 @@ a {
     background:
         linear-gradient(
             90deg,
-            rgba(20, 18, 15, .72),
-            rgba(20, 18, 15, .12)
+            rgba(55, 31, 26, .82),
+            rgba(55, 31, 26, .20)
         ),
         url("img/banner.jpg") center/cover;
 }
@@ -241,9 +241,9 @@ a {
 
     padding: 16px 30px;
 
-    border: 1px solid #29251f;
+    border: 1px solid #371F1A;
 
-    background: #29251f;
+    background: #371F1A;
 
     color: white;
 
@@ -259,12 +259,12 @@ a {
 .btn:hover {
     background: transparent;
 
-    color: #29251f;
+    color: #371F1A;
 }
 
 .hero .btn {
     background: white;
-    color: #29251f;
+    color: #371F1A;
     border-color: white;
 }
 
@@ -330,11 +330,11 @@ a {
 
     padding: 20px;
 
-    border: 1px solid #ddd4c8;
+    border: 1px solid #D8C5B0;
 
     background: transparent;
 
-    color: #29251f;
+    color: #371F1A;
 
     font-size: 11px;
 
@@ -346,11 +346,11 @@ a {
 }
 
 .categoria-grid button:hover {
-    background: #29251f;
+    background: #371F1A;
 
     color: white;
 
-    border-color: #29251f;
+    border-color: #371F1A;
 }
 
 
@@ -379,7 +379,7 @@ a {
 .filtros select {
     padding: 12px 20px;
 
-    border: 1px solid #ddd4c8;
+    border: 1px solid #D8C5B0;
 
     background: transparent;
 
@@ -409,7 +409,7 @@ a {
 
     aspect-ratio: 4 / 5;
 
-    background: #eee8df;
+    background: #E8D8C3;
 }
 
 .produto-img img {
@@ -463,7 +463,7 @@ a {
 }
 
 .favorito.ativo {
-    background: #29251f;
+    background: #371F1A;
 
     color: white;
 }
@@ -479,7 +479,7 @@ a {
 
     text-transform: uppercase;
 
-    color: #887d70;
+    color: #78655A;
 }
 
 .produto-info h3 {
@@ -497,7 +497,7 @@ a {
 
     font-size: 11px;
 
-    color: #82796e;
+    color: #78655A;
 }
 
 .produto-info strong {
@@ -515,7 +515,7 @@ a {
 
     padding: 12px;
 
-    border: 1px solid #29251f;
+    border: 1px solid #371F1A;
 
     background: transparent;
 
@@ -529,7 +529,7 @@ a {
 }
 
 .produto-btn:hover {
-    background: #29251f;
+    background: #371F1A;
 
     color: white;
 }
@@ -548,7 +548,7 @@ a {
 
     margin-top: 80px;
 
-    background: #eee8df;
+    background: #E8D8C3;
 }
 
 .sobre-img {
@@ -584,7 +584,7 @@ a {
 
     line-height: 1.9;
 
-    color: #665e54;
+    color: #6F5A4E;
 }
 
 .btn-outline {
@@ -594,7 +594,7 @@ a {
 
     padding: 15px 25px;
 
-    border: 1px solid #29251f;
+    border: 1px solid #371F1A;
 
     font-size: 10px;
 
@@ -623,7 +623,7 @@ a {
 
     line-height: 1.7;
 
-    color: #756d63;
+    color: #78655A;
 }
 
 .newsletter form {
@@ -639,7 +639,7 @@ a {
 
     padding: 16px;
 
-    border: 1px solid #d8d0c5;
+    border: 1px solid #D8C5B0;
 
     background: transparent;
 
@@ -649,9 +649,9 @@ a {
 .newsletter button {
     padding: 16px 25px;
 
-    border: 1px solid #29251f;
+    border: 1px solid #371F1A;
 
-    background: #29251f;
+    background: #371F1A;
 
     color: white;
 
@@ -670,7 +670,7 @@ a {
 footer {
     padding: 60px 7%;
 
-    background: #29251f;
+    background: #371F1A;
 
     color: white;
 
@@ -720,7 +720,7 @@ footer {
 footer p {
     font-size: 9px;
 
-    color: #aaa39b;
+    color: #C8B8A8;
 }
 
 
@@ -758,7 +758,7 @@ footer p {
 
     width: min(900px, 100%);
 
-    background: #faf8f4;
+    background: #FBF7F2;
 }
 
 .modal-content img {
@@ -842,7 +842,7 @@ footer p {
 
     flex-direction: column;
 
-    background: #faf8f4;
+    background: #FBF7F2;
 
     z-index: 3000;
 
@@ -860,7 +860,7 @@ footer p {
 
     padding: 30px;
 
-    border-bottom: 1px solid #ddd4c8;
+    border-bottom: 1px solid #D8C5B0;
 }
 
 .carrinho-header h2 {
@@ -898,7 +898,7 @@ footer p {
 
     padding: 15px 0;
 
-    border-bottom: 1px solid #ddd4c8;
+    border-bottom: 1px solid #D8C5B0;
 }
 
 .carrinho-item h4 {
@@ -924,7 +924,7 @@ footer p {
 .carrinho-footer {
     padding: 30px;
 
-    border-top: 1px solid #ddd4c8;
+    border-top: 1px solid #D8C5B0;
 }
 
 .carrinho-footer > div {
@@ -983,9 +983,9 @@ footer p {
 
         padding: 30px;
 
-        background: #faf8f4;
+        background: #FBF7F2;
 
-        border-bottom: 1px solid #ddd4c8;
+        border-bottom: 1px solid #D8C5B0;
     }
 
     .menu.ativo {

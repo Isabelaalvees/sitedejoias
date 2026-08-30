@@ -528,7 +528,7 @@
             <a href="#inicio">Início</a>
             <a href="#colecao">Coleção</a>
             <a href="#sobre">Sobre nós</a>
-            <a href="#contato">Instagram</a>
+            <a href="#">Instagram</a>
 
         </div>
 
@@ -541,96 +541,66 @@
 
     <!-- MODAL PRODUTO -->
     <div class="modal" id="produtoModal">
-
         <div class="modal-content">
-
             <button class="fechar" onclick="fecharModal()">
                 ×
             </button>
-
             <img id="modalImg" src="" alt="">
-
             <div class="modal-info">
-
                 <span id="modalCategoria">
                     JOIA
                 </span>
-
                 <h2 id="modalNome">
                     Nome
                 </h2>
-
                 <p id="modalMaterial">
                     Material
                 </p>
-
                 <strong id="modalPreco">
                     R$ 0,00
                 </strong>
-
                 <button
                     class="btn"
                     onclick="adicionarCarrinho()">
-
                     Adicionar ao carrinho
-
                 </button>
-
             </div>
-
         </div>
-
     </div>
 
 
     <!-- CARRINHO -->
     <aside class="carrinho" id="carrinho">
-
         <div class="carrinho-header">
-
             <h2>
                 Seu carrinho
             </h2>
-
             <button onclick="fecharCarrinho()">
                 ×
             </button>
-
         </div>
-
         <div id="carrinhoItens">
-
             <p class="carrinho-vazio">
                 Seu carrinho está vazio.
             </p>
-
         </div>
-
         <div class="carrinho-footer">
-
             <div>
                 Total:
                 <strong id="total">
                     R$ 0,00
                 </strong>
             </div>
-
             <button
                 class="btn"
                 onclick="finalizarPedidoWhatsApp()">
-
                 Finalizar pedido
-
             </button>
-
         </div>
-
     </aside>
 
 
     <div class="overlay" id="overlay" onclick="fecharTudo()"></div>
-
-
     <script src="script.js"></script>
 
 </body>

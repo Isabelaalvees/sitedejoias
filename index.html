@@ -1,11 +1,10 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Maison Élise | Joias</title>
+    <title>Veruz | Folheados</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -22,8 +21,8 @@
     <header class="header">
 
         <a href="#" class="logo">
-            <span>MAISON</span>
-            <strong>ÉLISE</strong>
+            <strong>VERUZ</strong>
+            <span>FOLHEADOS</span>
         </a>
 
         <nav class="menu" id="menu">
@@ -72,13 +71,12 @@
                 </span>
 
                 <h1>
-                    O brilho que<br>
-                    <em>conta sua história.</em>
+                    Detalhes que fazem<br>
+                    <em>você brilhar.</em>
                 </h1>
 
                 <p>
-                    Descubra joias criadas para transformar
-                    momentos especiais em memórias eternas.
+                    USE. AME. VERUZ
                 </p>
 
                 <a href="#colecao" class="btn">
@@ -110,25 +108,14 @@
                     Todas
                 </button>
 
-                <button onclick="filtrarCategoria('aneis')">
-                    💍
-                    Anéis
-                </button>
+                
 
                 <button onclick="filtrarCategoria('colares')">
-                    ◇
+                    ✦
                     Colares
                 </button>
 
-                <button onclick="filtrarCategoria('brincos')">
-                    ✧
-                    Brincos
-                </button>
 
-                <button onclick="filtrarCategoria('pulseiras')">
-                    ⛓
-                    Pulseiras
-                </button>
 
             </div>
 
@@ -141,8 +128,6 @@
             <div class="catalogo-header">
 
                 <div>
-
-                    <span>CURADORIA</span>
 
                     <h2>
                         Nossa coleção
@@ -175,14 +160,14 @@
 
             <div class="produtos" id="produtos">
 
-                <!-- PRODUTO 1 -->
+                <!-- PRODUTO COLAR AURA -->
                 <article class="produto"
-                    data-categoria="aneis"
-                    data-preco="890">
+                    data-categoria="colares"
+                    data-preco="29,90">
 
                     <div class="produto-img">
 
-                        <img src="img/anel-1.jpg" alt="Anel Aurora">
+                        <img src="img/colar-aura.jpg" alt="Colar Aura">
 
                         <span class="badge">
                             Novo
@@ -190,62 +175,7 @@
 
                         <button
                             class="favorito"
-                            onclick="favoritar(this, 'Anel Aurora')">
-
-                            ♡
-
-                        </button>
-
-                    </div>
-
-                    <div class="produto-info">
-
-                        <span class="categoria">
-                            Anéis
-                        </span>
-
-                        <h3>
-                            Anel Aurora
-                        </h3>
-
-                        <p>
-                            Ouro 18k
-                        </p>
-
-                        <strong>
-                            R$ 890,00
-                        </strong>
-
-                        <button
-                            class="produto-btn"
-                            onclick="verProduto(
-                                'Anel Aurora',
-                                'Ouro 18k',
-                                '890',
-                                'img/anel-1.jpg'
-                            )">
-
-                            Ver detalhes
-
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUTO 2 -->
-                <article class="produto"
-                    data-categoria="colares"
-                    data-preco="1290">
-
-                    <div class="produto-img">
-
-                        <img src="img/colar-1.jpg" alt="Colar Lumière">
-
-                        <button
-                            class="favorito"
-                            onclick="favoritar(this, 'Colar Lumière')">
+                            onclick="favoritar(this, 'Colar Aura')">
 
                             ♡
 
@@ -260,24 +190,19 @@
                         </span>
 
                         <h3>
-                            Colar Lumière
+                            Colar Aura
                         </h3>
 
-                        <p>
-                            Ouro 18k
-                        </p>
-
                         <strong>
-                            R$ 1.290,00
+                            R$ 29,90
                         </strong>
 
                         <button
                             class="produto-btn"
                             onclick="verProduto(
-                                'Colar Lumière',
-                                'Ouro 18k',
-                                '1290',
-                                'img/colar-1.jpg'
+                                'Colar Aura',
+                                '29,90',
+                                'img/colar-aura.jpg'
                             )">
 
                             Ver detalhes
@@ -289,121 +214,316 @@
                 </article>
 
 
-                <!-- PRODUTO 3 -->
+                <!-- PRODUTO COLAR CORAÇÃO -->
                 <article class="produto"
-                    data-categoria="brincos"
-                    data-preco="690">
+                    data-categoria="colares"
+                    data-preco="29,00">
 
                     <div class="produto-img">
 
-                        <img src="img/brinco-1.jpg" alt="Brinco Étoile">
+                        <img src="img/colar-coracao.jpg" alt="Colar Coração">
 
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Colar Coração')">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="produto-info">
+
+                        <span class="categoria">
+                            Colares
+                        </span>
+
+                        <h3>
+                            Colar Coração
+                        </h3>
+
+                        <strong>
+                            R$ 29,90
+                        </strong>
+
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Colar Coração',
+                                '29,90',
+                                'img/colar-coracao.jpg'
+                            )">
+
+                            Ver detalhes
+
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- PRODUTO COLAR ENCANTO -->
+                <article class="produto"
+                    data-categoria="colares"
+                    data-preco="29,90">
+                    <div class="produto-img">
+                        <img src="img/colar-encanto.jpg" alt="Colar Encanto">
                         <span class="badge">
                             Destaque
                         </span>
-
                         <button
                             class="favorito"
-                            onclick="favoritar(this, 'Brinco Étoile')">
-
+                            onclick="favoritar(this, 'Colar Encanto')">
                             ♡
-
                         </button>
-
                     </div>
-
                     <div class="produto-info">
-
                         <span class="categoria">
-                            Brincos
+                            Colares
                         </span>
-
                         <h3>
-                            Brinco Étoile
+                            Colar Encanto
                         </h3>
-
-                        <p>
-                            Ouro 18k e zircônia
-                        </p>
-
                         <strong>
-                            R$ 690,00
+                            R$ 29,90
                         </strong>
-
                         <button
                             class="produto-btn"
                             onclick="verProduto(
-                                'Brinco Étoile',
-                                'Ouro 18k e zircônia',
-                                '690',
-                                'img/brinco-1.jpg'
+                                'Colar Encanto',
+                                '29,90',
+                                'img/colar-encanto.jpg'
                             )">
-
                             Ver detalhes
-
                         </button>
-
                     </div>
-
                 </article>
 
 
-                <!-- PRODUTO 4 -->
+                <!-- PRODUTO COLAR LONGO LUMINA-->
                 <article class="produto"
-                    data-categoria="pulseiras"
-                    data-preco="980">
+                    data-categoria="colares"
+                    data-preco="29,90">
 
                     <div class="produto-img">
-
-                        <img src="img/pulseira-1.jpg" alt="Pulseira Élégance">
-
+                        <img src="img/colar-lumina.jpg" alt="Colar Longo Lumina">
                         <button
                             class="favorito"
-                            onclick="favoritar(this, 'Pulseira Élégance')">
+                            onclick="favoritar(this, 'Colar Longo Lumina')">
 
                             ♡
 
                         </button>
-
                     </div>
 
                     <div class="produto-info">
-
                         <span class="categoria">
-                            Pulseiras
+                            Colares
                         </span>
-
                         <h3>
-                            Pulseira Élégance
+                            Colar Longo Lumina
                         </h3>
-
-                        <p>
-                            Ouro 18k
-                        </p>
-
                         <strong>
-                            R$ 980,00
+                            R$ 29,90
                         </strong>
-
                         <button
                             class="produto-btn"
                             onclick="verProduto(
-                                'Pulseira Élégance',
-                                'Ouro 18k',
-                                '980',
-                                'img/pulseira-1.jpg'
+                                'Colar Longo Lumina',
+                                '29,90',
+                                'img/colar-lumina.jpg'
                             )">
-
                             Ver detalhes
-
                         </button>
-
                     </div>
+                </article>
 
+            <!-- PRODUTO COLAR Elos -->
+                <article class="produto"
+                    data-categoria="colares"
+                    data-preco="19,90">
+                        <div class="produto-img">
+                            <img src="img/colar-elos.jpg" alt="Colar Elos">
+                        <span class="badge">
+                            Destaque
+                        </span>
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Colar Elos')">
+                            ♡
+                        </button>
+                    </div>
+                    <div class="produto-info">
+                        <span class="categoria">
+                            Colares
+                        </span>
+                        <h3>
+                            Colar Elos
+                        </h3>
+                        <strong>
+                            R$ 19,90
+                        </strong>
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Colar Elos',
+                                '19,90',
+                                'img/colar-elos.jpg'
+                            )">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+            <!-- PRODUTO COLAR VANELEFF PRETO -->
+                <article class="produto"
+                    data-categoria="colares"
+                    data-preco="19,90">
+                    <div class="produto-img">
+                        <img src="img/colar-vaneleff.jpg" alt="Colar Vaneleff Preto">
+                        <span class="badge">
+                            Destaque
+                        </span>
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Colar Vaneleff Preto')">
+                            ♡
+                        </button>
+                    </div>
+                    <div class="produto-info">
+                        <span class="categoria">
+                            Colares
+                        </span>
+                        <h3>
+                            Colar Vaneleff Preto
+                        </h3>
+                        <strong>
+                            R$ 19,90
+                        </strong>
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Colar Vaneleff Preto',
+                                '19,90',
+                                'img/colar-vaneleff.jpg'
+                            )">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+            <!-- PRODUTO COLAR VANELEFF BRANCO -->
+                <article class="produto"
+                    data-categoria="colares"
+                    data-preco="19,90">
+                    <div class="produto-img">
+                        <img src="img/colar-vaneleff-branco.jpg" alt="Colar Vaneleff Branco">
+                        <span class="badge">
+                            Destaque
+                        </span>
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Colar Vaneleff Branco')">
+                            ♡
+                        </button>
+                    </div>
+                    <div class="produto-info">
+                        <span class="categoria">
+                            Colares
+                        </span>
+                        <h3>
+                            Colar Vaneleff Branco
+                        </h3>
+                        <strong>
+                            R$ 19,90
+                        </strong>
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Colar Vaneleff Branco',
+                                '19,90',
+                                'img/colar-vaneleff-branco.jpg'
+                            )">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+            <!-- PRODUTO COLAR ORLA -->
+                <article class="produto"
+                    data-categoria="colares"
+                    data-preco="19,90">
+                    <div class="produto-img">
+                        <img src="img/colar-orla.jpg" alt="Colar Orla">
+                        <span class="badge">
+                            Destaque
+                        </span>
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Colar Orla')">
+                            ♡
+                        </button>
+                    </div>
+                    <div class="produto-info">
+                        <span class="categoria">
+                            Colares
+                        </span>
+                        <h3>
+                            Colar Orla
+                        </h3>
+                        <strong>
+                            R$ 19,90
+                        </strong>
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Colar Orla',
+                                '19,90',
+                                'img/colar-orla.jpg'
+                            )">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </article>
+
+            <!-- PRODUTO COLAR FLOR DE OURO -->
+                <article class="produto"
+                    data-categoria="colares"
+                    data-preco="29,90">
+                    <div class="produto-img">
+                        <img src="img/colar-flor-de-ouro.jpg" alt="Colar Flor de Ouro">
+                        <span class="badge">
+                            Destaque
+                        </span>
+                        <button
+                            class="favorito"
+                            onclick="favoritar(this, 'Colar Flor de Ouro')">
+                            ♡
+                        </button>
+                    </div>
+                    <div class="produto-info">
+                        <span class="categoria">
+                            Colares
+                        </span>
+                        <h3>
+                            Colar Flor de Ouro
+                        </h3>
+                        <strong>
+                            R$ 19,90
+                        </strong>
+                        <button
+                            class="produto-btn"
+                            onclick="verProduto(
+                                'Colar Flor de Ouro',
+                                '19,90',
+                                'img/colar-flor-de-ouro.jpg'
+                            )">
+                            Ver detalhes
+                        </button>
+                    </div>
                 </article>
 
             </div>
-
         </section>
 
 
@@ -417,13 +537,13 @@
                 <span>NOSSA ESSÊNCIA</span>
 
                 <h2>
-                    Joias que atravessam gerações.
+                     Detalhes que fazer você brilhar
                 </h2>
 
                 <p>
-                    Cada peça Maison Élise nasce da combinação
-                    entre design atemporal, materiais selecionados
-                    e atenção aos mínimos detalhes.
+                    Cada peça da Veruz é criada com atenção aos detalhes, 
+                    combinando design contemporâneo e qualidade excepcional. 
+                    Nossas joias são mais do que acessórios; são expressões de estilo e personalidade.
                 </p>
 
                 <p>
@@ -448,12 +568,11 @@
             </span>
 
             <h2>
-                Receba novidades da Maison
+                Receba novidades da Veruz Folheados
             </h2>
 
             <p>
-                Cadastre seu e-mail e fique por dentro
-                de lançamentos e coleções exclusivas.
+                Entre no nosso grupo e faça parte da comunidade Veruz Folheados. Receba ofertas exclusivas, lançamentos e conteúdos especiais diretamente no seu e-mail.
             </p>
 
             <form onsubmit="inscrever(event)">
@@ -479,8 +598,8 @@
     <footer id="contato">
 
         <div class="footer-logo">
-            <span>MAISON</span>
-            <strong>ÉLISE</strong>
+            <strong>VERUZ</strong>
+            <span>FOLHEADOS</span>
         </div>
 
         <div class="footer-links">
@@ -488,12 +607,12 @@
             <a href="#inicio">Início</a>
             <a href="#colecao">Coleção</a>
             <a href="#sobre">Sobre nós</a>
-            <a href="#">Instagram</a>
+            <a href="#contato">Instagram</a>
 
         </div>
 
         <p>
-            © 2026 Maison Élise. Todos os direitos reservados.
+            © 2026 Veruz Folheados. Todos os direitos reservados.
         </p>
 
     </footer>

@@ -1028,3 +1028,52 @@ function configurarEventos() {
     );
 
 }
+
+/* =====================================================
+   FINALIZAR PEDIDO PELO WHATSAPP
+===================================================== */
+
+function finalizarPedidoWhatsApp() {
+
+    if (carrinho.length === 0) {
+
+        alert("Seu carrinho está vazio.");
+        return;
+
+    }
+
+    const numeroWhatsApp = "5519989390282"; 
+    // Troque pelo número da joalheria
+    // Formato: 55 + DDD + número
+    // Exemplo: 5519999999999
+
+    let mensagem = "Olá! Gostaria de fazer um pedido.%0A%0A";
+    mensagem += "*Meu pedido:*%0A%0A";
+
+    let total = 0;
+
+    carrinho.forEach((produto) => {
+
+        const quantidade = produto.quantidade || 1;
+
+        const subtotal = produto.preco * quantidade;
+
+        total += subtotal;
+
+        mensagem += `💎 *${produto.nome}*%0A`;
+        mensagem += `Quantidade: ${quantidade}%0A`;
+        mensagem += `Valor: ${formatarPreco(produto.preco)}%0A`;
+        mensagem += `Subtotal: ${formatarPreco(subtotal)}%0A%0A`;
+
+    });
+
+    mensagem += "--------------------%0A";
+    mensagem += `*Total do pedido: ${formatarPreco(total)}*%0A%0A`;
+    mensagem += "Gostaria de confirmar a disponibilidade das peças e finalizar meu pedido. ✨";
+
+    const url =
+        `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
+
+    window.open(url, "_blank");
+
+}

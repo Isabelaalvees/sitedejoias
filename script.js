@@ -242,7 +242,6 @@ function atualizarContadores() {
 
 function verProduto(
     nome,
-    material,
     preco,
     imagem,
     categoria = "Joia"
@@ -254,8 +253,6 @@ function verProduto(
     produtoSelecionado = {
 
         nome: nome,
-
-        material: material || "",
 
         preco: Number(preco) || 0,
 
@@ -279,11 +276,6 @@ function verProduto(
     const modalNome =
         document.getElementById(
             "modalNome"
-        );
-
-    const modalMaterial =
-        document.getElementById(
-            "modalMaterial"
         );
 
     const modalPreco =
@@ -313,15 +305,6 @@ function verProduto(
         modalNome.textContent = nome;
 
     }
-
-
-    if (modalMaterial) {
-
-        modalMaterial.textContent =
-            material || "Material não informado";
-
-    }
-
 
     if (modalPreco) {
 
@@ -498,10 +481,6 @@ function atualizarCarrinho() {
                 <h4>
                     ${produto.nome}
                 </h4>
-
-                <p>
-                    ${produto.material}
-                </p>
 
                 <p>
                     ${formatarPreco(produto.preco)}

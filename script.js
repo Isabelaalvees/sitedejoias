@@ -249,6 +249,8 @@ function verProduto(
 
     if (!nome || !imagem) return;
 
+    const precoNumerico =
+        converterPreco(preco);
 
     produtoSelecionado = {
 
@@ -309,9 +311,7 @@ function verProduto(
     if (modalPreco) {
 
         modalPreco.textContent =
-            formatarPreco(
-                Number(preco) || 0
-            );
+            formatarPreco(precoNumerico);
 
     }
 
@@ -1055,4 +1055,44 @@ function finalizarPedidoWhatsApp() {
 
     window.open(url, "_blank");
 
+}
+
+/* =====================================================
+   CONVERTER PREÇO
+===================================================== */
+
+function converterPreco(valor) {
+
+    if (typeof valor === "number") {
+        return valor;
+    }
+
+    if (!valor) {
+        return 0;
+    }
+
+    let preco = String(valor)
+        .replace("R$", "")
+        .trim();
+
+    /*
+       Se vier assim:
+       29,90
+       transforma em:
+       29.90
+    */
+
+    if (preco.includes(",")) {
+
+        preco = preco
+            .replace(/\./g, "")
+            .replace(",", ".");
+
+    }
+
+    const numero = Number(preco);
+
+    return Number.isNaN(numero)
+        ? 0
+        : numero;
 }
